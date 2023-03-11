@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace System_Resource_Monitor
 {
-    public partial class Form1 : Form
+    public partial class Monitor : Form
     {
-        public Form1()
+        public Monitor()
         {
             InitializeComponent();
+        }
+
+        private void Monitor_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
