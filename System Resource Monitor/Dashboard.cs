@@ -17,9 +17,24 @@ namespace System_Resource_Monitor
             InitializeComponent();
         }
 
+        private void customDesign()
+        {
+            pnl_button.Visible = false;
+        }
+
+        private void showSubMenu()
+        {
+            pnl_button.Visible = true;
+        }
+
         private void Monitor_Load(object sender, EventArgs e)
         {
+            customDesign();
+        }
 
+        private void btn_dashboard_Click(object sender, EventArgs e)
+        {
+            showSubMenu();
         }
     }
 }
