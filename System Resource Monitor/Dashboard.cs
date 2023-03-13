@@ -58,8 +58,8 @@ namespace System_Resource_Monitor
             childForm.TopLevel = false; //remove form top
             childForm.FormBorderStyle = FormBorderStyle.None; //remove form border
             childForm.Dock = DockStyle.Fill;
-            pnl_right.Controls.Add(childForm);
-            pnl_right.Tag = childForm;
+            pnl_right_up.Controls.Add(childForm);
+            pnl_right_up.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
