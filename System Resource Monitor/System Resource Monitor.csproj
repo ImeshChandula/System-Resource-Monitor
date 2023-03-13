@@ -52,10 +52,28 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_cpu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_cpu.Designer.cs">
+      <DependentUpon>form_cpu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_ram.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_ram.Designer.cs">
+      <DependentUpon>form_ram.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_cpu.resx">
+      <DependentUpon>form_cpu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_ram.resx">
+      <DependentUpon>form_ram.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

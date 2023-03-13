@@ -97,6 +97,7 @@
             // btn_dashboard
             // 
             this.btn_dashboard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btn_dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_dashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btn_dashboard.FlatAppearance.BorderSize = 0;
             this.btn_dashboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
@@ -127,6 +128,7 @@
             // btn_cpu
             // 
             this.btn_cpu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_cpu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_cpu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_cpu.FlatAppearance.BorderSize = 0;
             this.btn_cpu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -142,10 +144,12 @@
             this.btn_cpu.Text = "CPU";
             this.btn_cpu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_cpu.UseVisualStyleBackColor = false;
+            this.btn_cpu.Click += new System.EventHandler(this.btn_cpu_Click);
             // 
             // btn_ram
             // 
             this.btn_ram.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
+            this.btn_ram.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ram.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_ram.FlatAppearance.BorderSize = 0;
             this.btn_ram.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -161,6 +165,7 @@
             this.btn_ram.Text = "RAM";
             this.btn_ram.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_ram.UseVisualStyleBackColor = false;
+            this.btn_ram.Click += new System.EventHandler(this.btn_ram_Click);
             // 
             // Monitor
             // 
