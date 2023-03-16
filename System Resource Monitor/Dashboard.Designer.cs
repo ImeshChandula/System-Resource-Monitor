@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.pnl_left = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnl_button = new System.Windows.Forms.Panel();
@@ -95,14 +95,14 @@
             this.pnl_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_left.Location = new System.Drawing.Point(0, 0);
             this.pnl_left.Name = "pnl_left";
-            this.pnl_left.Size = new System.Drawing.Size(303, 495);
+            this.pnl_left.Size = new System.Drawing.Size(303, 488);
             this.pnl_left.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 438);
+            this.panel1.Location = new System.Drawing.Point(0, 431);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(303, 57);
             this.panel1.TabIndex = 3;
@@ -115,7 +115,7 @@
             this.pnl_button.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_button.Location = new System.Drawing.Point(0, 206);
             this.pnl_button.Name = "pnl_button";
-            this.pnl_button.Size = new System.Drawing.Size(303, 208);
+            this.pnl_button.Size = new System.Drawing.Size(303, 204);
             this.pnl_button.TabIndex = 2;
             // 
             // btn_stop
@@ -218,7 +218,7 @@
             this.pnl_right_up.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_right_up.Location = new System.Drawing.Point(303, 0);
             this.pnl_right_up.Name = "pnl_right_up";
-            this.pnl_right_up.Size = new System.Drawing.Size(1018, 441);
+            this.pnl_right_up.Size = new System.Drawing.Size(1019, 441);
             this.pnl_right_up.TabIndex = 2;
             // 
             // tableLayoutPanel1
@@ -234,7 +234,7 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 441F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1018, 441);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1019, 441);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -264,7 +264,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(439, 435);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(440, 435);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // lbl_P_cpu_v
@@ -273,7 +273,7 @@
             this.lbl_P_cpu_v.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_P_cpu_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_P_cpu_v.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_P_cpu_v.Location = new System.Drawing.Point(266, 360);
+            this.lbl_P_cpu_v.Location = new System.Drawing.Point(267, 360);
             this.lbl_P_cpu_v.Name = "lbl_P_cpu_v";
             this.lbl_P_cpu_v.Size = new System.Drawing.Size(170, 75);
             this.lbl_P_cpu_v.TabIndex = 12;
@@ -286,7 +286,7 @@
             this.lbl_L_cpu_v.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_L_cpu_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_L_cpu_v.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_L_cpu_v.Location = new System.Drawing.Point(266, 288);
+            this.lbl_L_cpu_v.Location = new System.Drawing.Point(267, 288);
             this.lbl_L_cpu_v.Name = "lbl_L_cpu_v";
             this.lbl_L_cpu_v.Size = new System.Drawing.Size(170, 72);
             this.lbl_L_cpu_v.TabIndex = 11;
@@ -299,7 +299,7 @@
             this.lbl_cores_v.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_cores_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cores_v.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_cores_v.Location = new System.Drawing.Point(266, 216);
+            this.lbl_cores_v.Location = new System.Drawing.Point(267, 216);
             this.lbl_cores_v.Name = "lbl_cores_v";
             this.lbl_cores_v.Size = new System.Drawing.Size(170, 72);
             this.lbl_cores_v.TabIndex = 10;
@@ -312,7 +312,7 @@
             this.lbl_upTime_v.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_upTime_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_upTime_v.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_upTime_v.Location = new System.Drawing.Point(266, 144);
+            this.lbl_upTime_v.Location = new System.Drawing.Point(267, 144);
             this.lbl_upTime_v.Name = "lbl_upTime_v";
             this.lbl_upTime_v.Size = new System.Drawing.Size(170, 72);
             this.lbl_upTime_v.TabIndex = 9;
@@ -325,7 +325,7 @@
             this.lbl_ram_v.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_ram_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_ram_v.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_ram_v.Location = new System.Drawing.Point(266, 72);
+            this.lbl_ram_v.Location = new System.Drawing.Point(267, 72);
             this.lbl_ram_v.Name = "lbl_ram_v";
             this.lbl_ram_v.Size = new System.Drawing.Size(170, 72);
             this.lbl_ram_v.TabIndex = 8;
@@ -340,7 +340,7 @@
             this.lbl_P_cpu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_P_cpu.Location = new System.Drawing.Point(3, 360);
             this.lbl_P_cpu.Name = "lbl_P_cpu";
-            this.lbl_P_cpu.Size = new System.Drawing.Size(257, 75);
+            this.lbl_P_cpu.Size = new System.Drawing.Size(258, 75);
             this.lbl_P_cpu.TabIndex = 6;
             this.lbl_P_cpu.Text = "Count of Physical CPU\'s";
             this.lbl_P_cpu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -353,7 +353,7 @@
             this.lbl_L_cpu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_L_cpu.Location = new System.Drawing.Point(3, 288);
             this.lbl_L_cpu.Name = "lbl_L_cpu";
-            this.lbl_L_cpu.Size = new System.Drawing.Size(257, 72);
+            this.lbl_L_cpu.Size = new System.Drawing.Size(258, 72);
             this.lbl_L_cpu.TabIndex = 5;
             this.lbl_L_cpu.Text = "Count of Logical CPU\'s";
             this.lbl_L_cpu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -366,7 +366,7 @@
             this.lbl_cores.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_cores.Location = new System.Drawing.Point(3, 216);
             this.lbl_cores.Name = "lbl_cores";
-            this.lbl_cores.Size = new System.Drawing.Size(257, 72);
+            this.lbl_cores.Size = new System.Drawing.Size(258, 72);
             this.lbl_cores.TabIndex = 4;
             this.lbl_cores.Text = "Count of Cores ";
             this.lbl_cores.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -379,7 +379,7 @@
             this.lbl_upTime.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_upTime.Location = new System.Drawing.Point(3, 144);
             this.lbl_upTime.Name = "lbl_upTime";
-            this.lbl_upTime.Size = new System.Drawing.Size(257, 72);
+            this.lbl_upTime.Size = new System.Drawing.Size(258, 72);
             this.lbl_upTime.TabIndex = 3;
             this.lbl_upTime.Text = "System Up Time";
             this.lbl_upTime.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -392,7 +392,7 @@
             this.lbl_cpu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_cpu.Location = new System.Drawing.Point(3, 0);
             this.lbl_cpu.Name = "lbl_cpu";
-            this.lbl_cpu.Size = new System.Drawing.Size(257, 72);
+            this.lbl_cpu.Size = new System.Drawing.Size(258, 72);
             this.lbl_cpu.TabIndex = 1;
             this.lbl_cpu.Text = "CPU ";
             this.lbl_cpu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -405,7 +405,7 @@
             this.lbl_ram.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_ram.Location = new System.Drawing.Point(3, 72);
             this.lbl_ram.Name = "lbl_ram";
-            this.lbl_ram.Size = new System.Drawing.Size(257, 72);
+            this.lbl_ram.Size = new System.Drawing.Size(258, 72);
             this.lbl_ram.TabIndex = 2;
             this.lbl_ram.Text = "Available RAM ";
             this.lbl_ram.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -416,7 +416,7 @@
             this.lbl_cpu_v.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbl_cpu_v.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_cpu_v.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_cpu_v.Location = new System.Drawing.Point(266, 0);
+            this.lbl_cpu_v.Location = new System.Drawing.Point(267, 0);
             this.lbl_cpu_v.Name = "lbl_cpu_v";
             this.lbl_cpu_v.Size = new System.Drawing.Size(170, 72);
             this.lbl_cpu_v.TabIndex = 7;
@@ -429,7 +429,7 @@
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.chart1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(448, 3);
+            this.panel2.Location = new System.Drawing.Point(449, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(567, 435);
             this.panel2.TabIndex = 1;
@@ -488,23 +488,23 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(0, 190);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "CPU";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "RAM";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Legend = "Legend1";
+            series3.Name = "CPU";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "RAM";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(567, 245);
             this.chart1.TabIndex = 0;
             // 
@@ -514,9 +514,9 @@
             this.pnl_right_down.Controls.Add(this.pnl_date);
             this.pnl_right_down.Controls.Add(this.pnl_time);
             this.pnl_right_down.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnl_right_down.Location = new System.Drawing.Point(303, 438);
+            this.pnl_right_down.Location = new System.Drawing.Point(303, 431);
             this.pnl_right_down.Name = "pnl_right_down";
-            this.pnl_right_down.Size = new System.Drawing.Size(1018, 57);
+            this.pnl_right_down.Size = new System.Drawing.Size(1019, 57);
             this.pnl_right_down.TabIndex = 3;
             // 
             // pnl_date
@@ -525,7 +525,7 @@
             this.pnl_date.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_date.Location = new System.Drawing.Point(553, 0);
             this.pnl_date.Name = "pnl_date";
-            this.pnl_date.Size = new System.Drawing.Size(465, 57);
+            this.pnl_date.Size = new System.Drawing.Size(466, 57);
             this.pnl_date.TabIndex = 1;
             // 
             // lbl_date
@@ -535,7 +535,7 @@
             this.lbl_date.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.lbl_date.Location = new System.Drawing.Point(0, 0);
             this.lbl_date.Name = "lbl_date";
-            this.lbl_date.Size = new System.Drawing.Size(465, 57);
+            this.lbl_date.Size = new System.Drawing.Size(466, 57);
             this.lbl_date.TabIndex = 1;
             this.lbl_date.Text = "Date : ";
             this.lbl_date.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -569,12 +569,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1321, 495);
+            this.ClientSize = new System.Drawing.Size(1322, 488);
             this.Controls.Add(this.pnl_right_down);
             this.Controls.Add(this.pnl_right_up);
             this.Controls.Add(this.pnl_left);
-            this.MaximumSize = new System.Drawing.Size(1339, 542);
-            this.MinimumSize = new System.Drawing.Size(1339, 542);
+            this.MaximumSize = new System.Drawing.Size(1340, 535);
+            this.MinimumSize = new System.Drawing.Size(1340, 535);
             this.Name = "Monitor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Resource Monitor";
