@@ -86,6 +86,9 @@ namespace System_Resource_Monitor
             lbl_cores_v.Text = ":";
             lbl_P_cpu_v.Text = ":";
             lbl_L_cpu_v.Text = ":";
+
+            pgBar_CPU.Value = 0;
+            pgBar_RAM.Value = 0;
         }
 
         private void btn_cpu_Click(object sender, EventArgs e)
