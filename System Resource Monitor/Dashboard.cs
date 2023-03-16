@@ -80,12 +80,12 @@ namespace System_Resource_Monitor
 
         private void stopAll()
         {
-            lbl_cpu.Text = "CPU : ";
-            lbl_ram.Text = "Available RAM : ";
-            lbl_upTime.Text = "System Up Time : ";
-            lbl_cores.Text = "Count of Cores : ";
-            lbl_P_cpu.Text = "Count Of Physical CPU's : ";
-            lbl_L_cpu.Text = "Count Of Logical CPU's : ";
+            lbl_cpu_v.Text = ":";
+            lbl_ram_v.Text = ":";
+            lbl_upTime_v.Text = ":";
+            lbl_cores_v.Text = ":";
+            lbl_P_cpu_v.Text = ":";
+            lbl_L_cpu_v.Text = ":";
         }
 
         private void btn_cpu_Click(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace System_Resource_Monitor
 
             foreach (var item in new System.Management.ManagementObjectSearcher("Select * from Win32_ComputerSystem").Get())
             {
-                lbl_P_cpu.Text = "Count Of Physical CPU's : " + item["NumberOfProcessors"];
+                lbl_P_cpu_v.Text = ": " + item["NumberOfProcessors"];
             }
 
             int coreCount = 0;
@@ -104,7 +104,7 @@ namespace System_Resource_Monitor
                 coreCount += int.Parse(item["NumberOfCores"].ToString());
             }
 
-            lbl_cores.Text = "Count of Cores : " + coreCount.ToString();
+            lbl_cores_v.Text = ": " + coreCount.ToString();
         }
 
         private void btn_ram_Click(object sender, EventArgs e)
@@ -146,11 +146,17 @@ namespace System_Resource_Monitor
             lbl_date.Text = "Date : " + DateTime.Now.ToShortDateString();
             lbl_time.Text = "Time : " + DateTime.Now.ToShortTimeString();
 
-            lbl_cpu.Text = "CPU : " + (int)perfCPU.NextValue() + " %";
-            lbl_ram.Text = "Available RAM : " + (int)perfRAM.NextValue() + " MB";
-            lbl_upTime.Text = "System Up Time : " + (int)perfSYS.NextValue()/60 + " Minutes";
+            lbl_cpu_v.Text = ": " + (int)perfCPU.NextValue() + " %";
+            lbl_ram_v.Text = ": " + (int)perfRAM.NextValue() + " MB";
+            lbl_upTime_v.Text = ": " + (int)perfSYS.NextValue()/60 + " Minutes";
 
-            lbl_L_cpu.Text = "Count Of Logical CPU's : " + Environment.ProcessorCount;
+            lbl_L_cpu_v.Text = ": " + Environment.ProcessorCount;
+
+            chart1.Series["CPU"].Points.AddY((int)perfCPU.NextValue());
+            chart1.Series["RAM"].Points.AddY((int)perfRAM.NextValue());
+
+            pgBar_CPU.Value = (int)perfCPU.NextValue();
+            pgBar_RAM.Value = (int)perfRAM.NextValue()/100;
         }
         
 
