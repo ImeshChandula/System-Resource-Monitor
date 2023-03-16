@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.pnl_left = new System.Windows.Forms.Panel();
             this.pnl_button = new System.Windows.Forms.Panel();
             this.btn_ram = new System.Windows.Forms.Button();
@@ -40,10 +41,11 @@
             this.pnl_cpu = new System.Windows.Forms.Panel();
             this.lbl_cpu = new System.Windows.Forms.Label();
             this.pnl_right_down = new System.Windows.Forms.Panel();
-            this.pnl_time = new System.Windows.Forms.Panel();
             this.pnl_date = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_date = new System.Windows.Forms.Label();
+            this.pnl_time = new System.Windows.Forms.Panel();
+            this.lbl_time = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnl_left.SuspendLayout();
             this.pnl_button.SuspendLayout();
             this.pnl_category.SuspendLayout();
@@ -51,8 +53,8 @@
             this.pnl_right_up.SuspendLayout();
             this.pnl_cpu.SuspendLayout();
             this.pnl_right_down.SuspendLayout();
-            this.pnl_time.SuspendLayout();
             this.pnl_date.SuspendLayout();
+            this.pnl_time.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_left
@@ -210,47 +212,51 @@
             this.pnl_right_down.Size = new System.Drawing.Size(568, 51);
             this.pnl_right_down.TabIndex = 3;
             // 
-            // pnl_time
-            // 
-            this.pnl_time.Controls.Add(this.label1);
-            this.pnl_time.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pnl_time.Location = new System.Drawing.Point(0, 0);
-            this.pnl_time.Name = "pnl_time";
-            this.pnl_time.Size = new System.Drawing.Size(297, 51);
-            this.pnl_time.TabIndex = 0;
-            // 
             // pnl_date
             // 
-            this.pnl_date.Controls.Add(this.label2);
+            this.pnl_date.Controls.Add(this.lbl_date);
             this.pnl_date.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_date.Location = new System.Drawing.Point(297, 0);
             this.pnl_date.Name = "pnl_date";
             this.pnl_date.Size = new System.Drawing.Size(271, 51);
             this.pnl_date.TabIndex = 1;
             // 
-            // label1
+            // lbl_date
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 51);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Time : ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbl_date.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_date.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_date.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_date.Location = new System.Drawing.Point(0, 0);
+            this.lbl_date.Name = "lbl_date";
+            this.lbl_date.Size = new System.Drawing.Size(271, 51);
+            this.lbl_date.TabIndex = 1;
+            this.lbl_date.Text = "Date : ";
+            this.lbl_date.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label2
+            // pnl_time
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(271, 51);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Date : ";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pnl_time.Controls.Add(this.lbl_time);
+            this.pnl_time.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_time.Location = new System.Drawing.Point(0, 0);
+            this.pnl_time.Name = "pnl_time";
+            this.pnl_time.Size = new System.Drawing.Size(297, 51);
+            this.pnl_time.TabIndex = 0;
+            // 
+            // lbl_time
+            // 
+            this.lbl_time.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbl_time.Font = new System.Drawing.Font("Mongolian Baiti", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_time.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbl_time.Location = new System.Drawing.Point(0, 0);
+            this.lbl_time.Name = "lbl_time";
+            this.lbl_time.Size = new System.Drawing.Size(297, 51);
+            this.lbl_time.TabIndex = 0;
+            this.lbl_time.Text = "Time : ";
+            this.lbl_time.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Monitor
             // 
@@ -271,8 +277,8 @@
             this.pnl_right_up.ResumeLayout(false);
             this.pnl_cpu.ResumeLayout(false);
             this.pnl_right_down.ResumeLayout(false);
-            this.pnl_time.ResumeLayout(false);
             this.pnl_date.ResumeLayout(false);
+            this.pnl_time.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -293,8 +299,9 @@
         private System.Windows.Forms.Panel pnl_right_down;
         private System.Windows.Forms.Panel pnl_date;
         private System.Windows.Forms.Panel pnl_time;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbl_date;
+        private System.Windows.Forms.Label lbl_time;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

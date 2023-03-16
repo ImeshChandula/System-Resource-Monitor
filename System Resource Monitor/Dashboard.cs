@@ -83,5 +83,13 @@ namespace System_Resource_Monitor
         {
             openChildForm(new form_ram());
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_date.Text = "Date: " + DateTime.Now.ToShortDateString();
+            lbl_time.Text = "Time: " + DateTime.Now.ToShortTimeString();
+        }
+
+
     }
 }
